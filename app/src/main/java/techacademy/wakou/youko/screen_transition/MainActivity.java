@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
         Intent intent = new Intent(this,SecondActivity.class);
+        intent.putExtra("VALUE1",10);
+        intent.putExtra("VALUE2",20);
         startActivity(intent);
     }
 }
